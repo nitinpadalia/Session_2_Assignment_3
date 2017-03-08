@@ -1,17 +1,53 @@
-tr.mainTableHeader {
-    color: ghostwhite;
-    background-color: lightsteelblue;
-    border: 2px solid black;
-}
-
-tr.subTableHeader {
+th.mainHeader {
     color: black;
-    background-color: lightgrey;
-    border: 2px solid black;
+    background-color: lightsteelblue;
+    
 }
 
-table,
-td {
-    border: 1px solid grey;
+
+table#bmi {
+    border: 2px solid grey;
     border-collapse: collapse;
+}
+
+/* Different BMI values will be in different categories */
+.obese {
+    background-color: red;
+}
+
+.overWeight {
+    background-color: orange;
+}
+
+.healthy {
+    background-color: green;
+}
+
+.underWeight {
+    background-color: yellow;
+}
+
+/* Even and odd row will be displayed in different color */
+table#bmi tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+table#bmi tr:nth-child(odd) {
+    background-color: wheat;
+}
+
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Legends fixed size table */
+.fixed {
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    table-layout: fixed;
+    font-weight: bold;
 }

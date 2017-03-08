@@ -9,12 +9,14 @@
 </head>
 
 <body>
-    <table>
-        <tr class="mainTableHeader">
-            <th rowspan="2">Weight (Pounds)</th>
-            <th colspan="6">Height (Feet, Inches)</th>
+    <h1 class="center"> BMI Chart </h1>
+    <table id="bmi" class="center">
+        <tr>
+            <th class="mainHeader" rowspan="2">Weight (Pounds)</th>
+            <th class="mainHeader" colspan="6">Height (Feet, Inches)</th>
         </tr>
-        <tr class="subTableHeader">
+        <tr>
+            <!-- Subheader mentioning vaious height range -->
             <th>5'0"</th>
             <th>5'3"</th>
             <th>5'6"</th>
@@ -22,106 +24,122 @@
             <th>6'0"</th>
             <th>6'3"</th>
         </tr>
+        <!-- BMI values with range 18-25 are healthy, below 18 are considered under-weight
+        in range 26-30 are considered over-weight and above 30 are obese -->
         <tr>
             <td>120</td>
-            <td>23</td>
-            <td>21</td>
-            <td>21</td>
-            <td>19</td>
-            <td>17</td>
-            <td>16</td>
+            <td class="healthy">23</td>
+            <td class="healthy">21</td>
+            <td class="healthy">21</td>
+            <td class="healthy">19</td>
+            <td class="underWeight">17</td>
+            <td class="underWeight">16</td>
         </tr>
         <tr>
             <td>130</td>
-            <td>25</td>
-            <td>23</td>
-            <td>22</td>
-            <td>20</td>
-            <td>18</td>
-            <td>17</td>
+            <td class="healthy">25</td>
+            <td class="healthy">23</td>
+            <td class="healthy">22</td>
+            <td class="healthy">20</td>
+            <td class="healthy">18</td>
+            <td class="underWeight">17</td>
         </tr>
         <tr>
             <td>140</td>
-            <td>27</td>
-            <td>25</td>
-            <td>23</td>
-            <td>21</td>
-            <td>19</td>
-            <td>18</td>
+            <td class="overWeight">27</td>
+            <td class="healthy">25</td>
+            <td class="healthy">23</td>
+            <td class="healthy">21</td>
+            <td class="healthy" >19</td>
+            <td class="healthy">18</td>
         </tr>
         <tr>
             <td>150</td>
-            <td>29</td>
-            <td>27</td>
-            <td>24</td>
-            <td>22</td>
-            <td>20</td>
-            <td>19</td>
+            <td class="overWeight">29</td>
+            <td class="overWeight">27</td>
+            <td class="healthy">24</td>
+            <td class="healthy">22</td>
+            <td class="healthy">20</td>
+            <td class="healthy">19</td>
         </tr>
         <tr>
             <td>160</td>
-            <td>31</td>
-            <td>28</td>
-            <td>26</td>
-            <td>24</td>
-            <td>22</td>
-            <td>20</td>
+            <td class="obese">31</td>
+            <td class="overWeight">28</td>
+            <td class="overWeight">26</td>
+            <td class="healthy">24</td>
+            <td class="healthy">22</td>
+            <td class="healthy">20</td>
         </tr>
         <tr>
             <td>170</td>
-            <td>33</td>
-            <td>30</td>
-            <td>28</td>
-            <td>25</td>
-            <td>23</td>
-            <td>21</td>
+            <td class="obese">33</td>
+            <td class="obese">30</td>
+            <td class="overWeight">28</td>
+            <td class="healthy">25</td>
+            <td class="healthy">23</td>
+            <td class="healthy">21</td>
         </tr>
         <tr>
             <td>180</td>
-            <td>35</td>
-            <td>32</td>
-            <td>29</td>
-            <td>27</td>
-            <td>25</td>
-            <td>23</td>
+            <td class="obese">35</td>
+            <td class="obese">32</td>
+            <td class="overWeight">29</td>
+            <td class="overWeight">27</td>
+            <td class="healthy">25</td>
+            <td class="healthy">23</td>
         </tr>
         <tr>
             <td>190</td>
-            <td>37</td>
-            <td>34</td>
-            <td>31</td>
-            <td>28</td>
-            <td>26</td>
-            <td>24</td>
+            <td class="obese">37</td>
+            <td class="obese">34</td>
+            <td class="obese">31</td>
+            <td class="overWeight">28</td>
+            <td class="overWeight">26</td>
+            <td class="healthy">24</td>
         </tr>
         <tr>
             <td>200</td>
-            <td>39</td>
-            <td>36</td>
-            <td>32</td>
-            <td>30</td>
-            <td>27</td>
-            <td>25</td>
+            <td class="obese">39</td>
+            <td class="obese">36</td>
+            <td class="obese">32</td>
+            <td class="obese">30</td>
+            <td class="overWeight">27</td>
+            <td class="healthy">25</td>
         </tr>
         <tr>
             <td>210</td>
-            <td>41</td>
-            <td>37</td>
-            <td>34</td>
-            <td>31</td>
-            <td>29</td>
-            <td>26</td>
+            <td class="obese">41</td>
+            <td class="obese">37</td>
+            <td class="obese">34</td>
+            <td class="obese">31</td>
+            <td class="overWeight">29</td>
+            <td class="overWeight">26</td>
         </tr>
         <tr>
             <td>220</td>
-            <td>43</td>
-            <td>39</td>
-            <td>36</td>
-            <td>33</td>
-            <td>30</td>
-            <td>28</td>
+            <td class="obese">43</td>
+            <td class="obese">39</td>
+            <td class="obese">36</td>
+            <td class="obese">33</td>
+            <td class="obese">30</td>
+            <td class="overWeight">28</td>
         </tr>
 
+    </table>
+    <!-- Table describing legends used for various health categories -->
+    <table class="fixed">
+        <tr>
+            <td colspan="4">Legends: </td>
+            <td class="obese"/>
+            <td colspan="4">Obese</td>
+            <td class="overWeight"/>
+            <td colspan="4">Overweight</td>
+            <td class="healthy"/>
+            <td colspan="4">Healthy</td>
+            <td class="underWeight"/>
+            <td colspan="4">Underweight</td>
+        </tr>
     </table>
 </body>
 
